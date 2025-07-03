@@ -228,14 +228,15 @@ class Game {
 
     // prettier-ignore
     this.state =
-      tileCount > 0
-        ? structuredClone([
-          [0, 0, 0, 0],
-          [0, 0, 0, 0],
-          [0, 0, 0, 0],
-          [0, 0, 0, 0],
-        ])
-        : structuredClone(this.init);
+    tileCount > 0
+      ? structuredClone(this.init)
+      : structuredClone([
+        [0, 0, 0, 0],
+        [0, 0, 0, 0],
+        [0, 0, 0, 0],
+        [0, 0, 0, 0],
+      ]);
+
     this.score = 0;
 
     this.updateUI();

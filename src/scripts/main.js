@@ -17,6 +17,7 @@ startRestartButton.addEventListener('click', (e) => {
     startRestartButton.textContent = 'Restart';
     document.querySelector('.message-start').classList.add('hidden');
     game.start();
+    scoreTile.textContent = game.getScore();
   } else {
     startRestartButton.classList.remove('restart');
     startRestartButton.classList.add('start');
